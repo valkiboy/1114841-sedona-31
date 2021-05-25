@@ -19,6 +19,120 @@
       </nav>
     </header>
     <main>
+      <h1>Выбор жилья</h1>
+      <section>
+        <h2>фильтры</h2>
+        <form action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="Бассейн" id="Бассейн" checked>
+            <label for="Бассейн">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Парковка" id="Парковка">
+            <label for="Парковка">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="WI-FI" id="WI-FI" checked>
+            <label for="WI-FI">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="Гостиница" id="Гостиница" checked>
+              <label for="Гостиница">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Мотель" id="Мотель" checked>
+              <label for="Мотель">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Апартаменты" id="Апартаменты" checked>
+              <label for="Апартаменты">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки, &#8381;</legend>
+            <ul>
+              <li>
+                <input type="range" name="price" id="price-range-1" min="0" max="3000" value="0">
+                <label for="price-range-1">от 0</label>
+              </li>
+              <li>
+                <input type="range" name="price" id="price-range-2" min="0" max="3000" value="3000">
+                <label for="price-range-2">до 3000</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+          </form>
+          </section>
+          <section>
+            <h2>Найдено:</h2>
+            <p>3</p>
+            <h3>Сортировка</h3>
+            <ul>
+              <li>
+                <a href="">По цене</a>
+              </li>
+              <li>
+                <a href="">По типу</a>
+              </li>
+              <li>
+                <a href="">По рейтингу</a>
+              </li>
+              <li>
+                <button type="button" class="arrow-up"></button>
+              </li>
+              <li>
+                <button type="button" class="arrow-down"></button>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Список отелей</h2>
+            <ul>
+              <li>
+                <h3>Amara resort & spa</h3>
+                <p>Гостиница от 4000</p>
+                <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="фото отеля с красными деревьями">
+                <a href="">Подробнее</a>
+                <a href="">Забронировать</a>
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <p>Рейтинг:8,5</p>
+              </li>
+              <li>
+                <h3>Desert quail inn</h3>
+                <p>Мотель от 3000</p>
+                <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="фото мотеля у дороги">
+                <a href="">Подробнее</a>
+                <a href="">Забронировать</a>
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <p>Рейтинг:8,9р</p>
+              </li>
+              <li>
+                <h3>Villas at poco diablo</h3>
+                <p>Апартаменты от 2000</p>
+                <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="фото дома в зелени">
+                <a href="">Подробнее</a>
+                <a href="">Забронировать</a>
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <img src="https://via.placeholder.com/18x17" width="18" height="17" alt="Звездочка">
+                <p>Рейтинг:9,2</p>
+              </li>
+            </ul>
+          </section>
     </main>
     <footer>
         <section>
