@@ -168,13 +168,18 @@ img {
 }
 .social-button {
   background-color: var(--basic-blue);
+  display: block;
+  width: 46px;
+  height: 48px;
+  text-align: center;
+  margin : 20px;
 }
 
-.copyright-academy:hover {
+.copyright-button :hover {
   fill: var(--basic-blue);
 }
 
-.copyright-academy:focus {
+.copyright-button :active {
   fill: var(--basic-special);
 }
 
