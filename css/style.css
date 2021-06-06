@@ -262,7 +262,7 @@ img {
 .filters {
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  background-image: url(/image/background_filters.jpg);
+  background-image: url(../image/background_filters.jpg);
   background-repeat: no-repeat;
 }
 
