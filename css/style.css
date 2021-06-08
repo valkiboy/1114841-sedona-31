@@ -19,8 +19,8 @@
 
 /* Global */
 
-body {
-  min-width: 960px;
+.page-body {
+  min-width: 1200px;
   margin: 0 40px;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -30,6 +30,10 @@ body {
   color: var(--basic-dark);
   text-transform: uppercase;
   background-color: var(--basic-grey-light);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -37,13 +41,44 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+/* Main header */
+
+.main-header-wrapper {
+  background-color: var(--basic-white);
+}
+
+.main-header {
+  margin-bottom: 0;
+}
+
+/* Logo */
+
+.main-header-logo {
+  justify-self: center;
+}
+
+.centering {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
 /* Main navigation */
 
 .main-navigation {
+  display: grid;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
 .main-navigation a {
@@ -54,6 +89,8 @@ img {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -83,17 +120,23 @@ img {
   font-weight: 700;
 }
 
+/* Five reasons */
+
 .five-reasons {
   text-align: center;
   font-size: 14px;
   line-height: 26px;
 }
 
-.feature-list {
-  list-style: none;
+.features {
+  margin-bottom: 58px;
 }
 
 .feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
@@ -106,6 +149,8 @@ img {
 
 .feature-list-attractions {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .real-town,
@@ -115,6 +160,10 @@ img {
 
 .feature-list-attractions {
   background-color: var(--basic-white);
+}
+
+.feature-item {
+  margin: 0 10px;
 }
 
 .small-area,
@@ -308,6 +357,11 @@ img {
   background-color: var(--basic-white);
 }
 
+.main-footer .centering {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer-contacts a {
   text-decoration: none;
   color: var(--basic-black);
@@ -322,7 +376,12 @@ img {
 }
 
 .footer-social {
+  padding-top: 36px;
   line-height: 26px;
+}
+
+.footer-contacts {
+  padding-top: 23px;
 }
 
 /* Social button */
@@ -347,5 +406,6 @@ img {
 }
 
 .footer-copyright {
+  padding-top: 47px;
   line-height: 26px;
 }
