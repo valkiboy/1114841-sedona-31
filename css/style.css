@@ -21,7 +21,7 @@
 
 .page-body {
   min-width: 1200px;
-  margin: 0 40px;
+  margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -47,35 +47,16 @@ img {
   height: 100%;
 }
 
-/* Main header */
-
-.main-header-wrapper {
-  background-color: var(--basic-white);
-}
-
-.main-header {
-  margin-bottom: 0;
-}
-
 /* Logo */
 
 .main-header-logo {
   justify-self: center;
 }
 
-.centering {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 0;
-}
-
 /* Main navigation */
 
 .main-navigation {
   display: grid;
-  width: 1180px;
-  margin: 0 auto;
-  padding: 0 10px;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
@@ -111,6 +92,10 @@ img {
 
 .container {
   background-color: var(--basic-white);
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .container h1 {
@@ -141,6 +126,14 @@ img {
   text-align: center;
 }
 
+.feature-list .real-town {
+  grid-column: 1/4;
+}
+
+.feature-list .devil-bridge {
+  grid-column: 1/4;
+}
+
 .feature-list h3 {
   font-size: 21px;
   line-height: 21px;
@@ -163,7 +156,7 @@ img {
 }
 
 .feature-item {
-  margin: 0 10px;
+  margin: 0;
 }
 
 .small-area,
@@ -313,7 +306,18 @@ img {
   background-color: var(--basic-brown);
   background-image: url(../image/background_filters.jpg);
   background-repeat: no-repeat;
+
 }
+
+/* .filters-wrapper {
+display: grid;
+  grid-template-columns: 300px 500px 400px;
+}
+
+.sorting-found-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
 
 .filters ul {
   list-style: none;
@@ -355,9 +359,6 @@ img {
 
 .main-footer {
   background-color: var(--basic-white);
-}
-
-.main-footer .centering {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
