@@ -306,18 +306,12 @@ img {
   background-color: var(--basic-brown);
   background-image: url(../image/background_filters.jpg);
   background-repeat: no-repeat;
-
 }
 
-/* .filters-wrapper {
-display: grid;
+.filters-wrapper {
+  display: grid;
   grid-template-columns: 300px 500px 400px;
 }
-
-.sorting-found-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-} */
 
 .filters ul {
   list-style: none;
@@ -353,6 +347,16 @@ display: grid;
 
 .sorting-found ul {
   list-style: none;
+}
+
+.sorting-found-wrapper {
+  display: grid;
+  grid-template-columns: 230px 460px 510px;
+}
+
+.list-of-hotels-wrapper {
+  display: grid;
+  grid-template-columns: 230px 460px 510px;
 }
 
 /* Main footer */
