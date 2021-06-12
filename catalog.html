@@ -35,8 +35,8 @@
         <h1>Выбор жилья</h1>
         <section class="filters">
           <h2>фильтры</h2>
-          <form action="https://echo.htmlacademy.ru">
-            <div class="filters-wrapper">
+          <form action="https://echo.htmlacademy.ru" class="filters-wrapper">
+            <div class="filters-wrapper-left">
               <fieldset>
                 <legend class="filters-infrastructure">Инфраструктура:</legend>
                 <ul>
@@ -106,6 +106,8 @@
                   </li>
                 </ul>
               </fieldset>
+            </div>
+            <div class="filters-wrapper-right">
               <fieldset>
                 <legend class="filters-cost-per-day">
                   Стоимость в сутки, &#8381;
@@ -134,12 +136,11 @@
             </div>
           </form>
         </section>
-        <div class="sorting-found-wrapper">
-          <section class="sorting-found">
+        <section class="sorting-found">
+          <div class="sorting-found-wrapper">
             <h2>Найдено:</h2>
             <p>3</p>
             <h3>Сортировка:</h3>
-
             <ul>
               <li>
                 <a class="button sorting-found-items" href="">По цене</a>
@@ -159,78 +160,76 @@
                 <a class="button sorting-arrows-down" href=""></a>
               </li>
             </ul>
-          </section>
-        </div>
-        <div class="list-of-hotels-wrapper">
-          <section>
-            <h2>Список отелей</h2>
-            <ul class="list-of-hotels">
-              <li>
-                <a class="name-of-the-hotel" href="">Amara resort & spa</a>
-                <p>Гостиница от 4000</p>
-                <img
-                  src="image/hotel_with_red_trees.jpg"
-                  width="135"
-                  height="90"
-                  alt="фото отеля с красными деревьями"
-                />
-                <a class="button more-detailed" href="">Подробнее</a>
-                <a class="button to-book" href="">Забронировать</a>
-                <img
-                  src="image/star.svg"
-                  width="18"
-                  height="17"
-                  alt="4-х звёздочный"
-                />
-                <img src="image/star.svg" width="18" height="17" alt="" />
-                <img src="image/star.svg" width="18" height="17" alt="" />
-                <img src="image/star.svg" width="18" height="17" alt="" />
-                <p class="rating">Рейтинг:8,5</p>
-              </li>
-              <li>
-                <a class="name-of-the-hotel" href="">Desert quail inn</a>
-                <p>Мотель от 3000</p>
-                <img
-                  src="image/roadside_motel.jpg"
-                  width="135"
-                  height="90"
-                  alt="фото мотеля у дороги"
-                />
-                <a class="button more-detailed" href="">Подробнее</a>
-                <a class="button to-book" href="">Забронировать</a>
-                <img
-                  src="image/star.svg"
-                  width="18"
-                  height="17"
-                  alt="3-х звёздочный"
-                />
-                <img src="image/star.svg" width="18" height="17" alt="" />
-                <img src="image/star.svg" width="18" height="17" alt="" />
-                <p class="rating">Рейтинг:8,9</p>
-              </li>
-              <li>
-                <a class="name-of-the-hotel" href="">Villas at poco diablo</a>
-                <p>Апартаменты от 2000</p>
-                <img
-                  src="image/house_in_greenery.jpg"
-                  width="135"
-                  height="90"
-                  alt="фото дома в зелени"
-                />
-                <a class="button more-detailed" href="">Подробнее</a>
-                <a class="button to-book" href="">Забронировать</a>
-                <img
-                  src="image/star.svg"
-                  width="18"
-                  height="17"
-                  alt="2-х звёздочный"
-                />
-                <img src="image/star.svg" width="18" height="17" alt="" />
-                <p class="rating">Рейтинг:9,2</p>
-              </li>
-            </ul>
-          </section>
-        </div>
+          </div>
+        </section>
+        <section>
+          <h2>Список отелей</h2>
+          <ul class="list-of-hotels">
+            <li>
+              <a class="name-of-the-hotel" href="">Amara resort & spa</a>
+              <p>Гостиница от 4000</p>
+              <img
+                src="image/hotel_with_red_trees.jpg"
+                width="135"
+                height="90"
+                alt="фото отеля с красными деревьями"
+              />
+              <a class="button more-detailed" href="">Подробнее</a>
+              <a class="button to-book" href="">Забронировать</a>
+              <img
+                src="image/star.svg"
+                width="18"
+                height="17"
+                alt="4-х звёздочный"
+              />
+              <img src="image/star.svg" width="18" height="17" alt="" />
+              <img src="image/star.svg" width="18" height="17" alt="" />
+              <img src="image/star.svg" width="18" height="17" alt="" />
+              <p class="rating">Рейтинг:8,5</p>
+            </li>
+            <li>
+              <a class="name-of-the-hotel" href="">Desert quail inn</a>
+              <p>Мотель от 3000</p>
+              <img
+                src="image/roadside_motel.jpg"
+                width="135"
+                height="90"
+                alt="фото мотеля у дороги"
+              />
+              <a class="button more-detailed" href="">Подробнее</a>
+              <a class="button to-book" href="">Забронировать</a>
+              <img
+                src="image/star.svg"
+                width="18"
+                height="17"
+                alt="3-х звёздочный"
+              />
+              <img src="image/star.svg" width="18" height="17" alt="" />
+              <img src="image/star.svg" width="18" height="17" alt="" />
+              <p class="rating">Рейтинг:8,9</p>
+            </li>
+            <li>
+              <a class="name-of-the-hotel" href="">Villas at poco diablo</a>
+              <p>Апартаменты от 2000</p>
+              <img
+                src="image/house_in_greenery.jpg"
+                width="135"
+                height="90"
+                alt="фото дома в зелени"
+              />
+              <a class="button more-detailed" href="">Подробнее</a>
+              <a class="button to-book" href="">Забронировать</a>
+              <img
+                src="image/star.svg"
+                width="18"
+                height="17"
+                alt="2-х звёздочный"
+              />
+              <img src="image/star.svg" width="18" height="17" alt="" />
+              <p class="rating">Рейтинг:9,2</p>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer class="main-footer">
         <section class="footer-contacts">

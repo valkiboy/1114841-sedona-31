@@ -310,7 +310,7 @@ img {
 
 .filters-wrapper {
   display: grid;
-  grid-template-columns: 300px 500px 400px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .filters ul {
@@ -350,11 +350,6 @@ img {
 }
 
 .sorting-found-wrapper {
-  display: grid;
-  grid-template-columns: 230px 460px 510px;
-}
-
-.list-of-hotels-wrapper {
   display: grid;
   grid-template-columns: 230px 460px 510px;
 }
