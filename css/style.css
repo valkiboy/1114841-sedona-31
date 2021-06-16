@@ -134,6 +134,22 @@ img {
   grid-column: 1/4;
 }
 
+.feature-item-real-town {
+  display: flex;
+}
+
+.real-town-image-wrapper {
+  height: 256px;
+  width: 800px;
+  background-color: rgba(240, 173, 147, 0.904);
+}
+
+.real-town-wrapper {
+  height: 256px;
+  width: 400px;
+  background-color: var(--basic-blue)
+}
+
 .feature-list h3 {
   font-size: 21px;
   line-height: 21px;
@@ -144,19 +160,62 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.real-town,
-.devil-bridge {
-  background-color: var(--basic-blue);
+  display: flex;
+  height: 330px;
 }
 
 .feature-list-attractions {
-  background-color: var(--basic-white);
+  /* background-color: var(--basic-white); */
+}
+
+.feature-list-attractions li:nth-child(1) {
+  width: 400px;
+}
+
+.feature-list-attractions li:nth-child(2) {
+  width: 400px;
+}
+
+.feature-list-attractions li:nth-child(3) {
+  width: 400px;
+}
+
+.feature-item-devil-bridge {
+  display: flex;
+}
+
+.devil-bridge-image-wrapper {
+  height: 256px;
+  width: 800px;
+  background-color: rgba(240, 173, 147, 0.904);
+}
+
+.devil-bridge-wrapper {
+  height: 256px;
+  width: 400px;
+  background-color: var(--basic-blue)
+
 }
 
 .feature-item {
   margin: 0;
+}
+
+.features-items-small-area {
+  width: 400px;
+  height: 256px;
+}
+
+
+.features-items-beautiful-road {
+  width: 400px;
+  height: 256px;
+}
+
+
+.features-items-few-tourists {
+  width: 400px;
+  height: 256px;
 }
 
 .small-area,
@@ -393,6 +452,10 @@ img {
   height: 48px;
   text-align: center;
   margin: 20px;
+}
+
+.footer-social-wrapper {
+  display: flex;
 }
 
 /* copyright button */
