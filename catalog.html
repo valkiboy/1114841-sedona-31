@@ -65,7 +65,6 @@
                       type="checkbox"
                       name="WI-FI"
                       id="WI-FI"
-                      checked
                     />
                     <label for="WI-FI">WI-FI</label>
                   </li>
@@ -138,26 +137,30 @@
         </section>
         <section class="sorting-found">
           <div class="sorting-found-wrapper">
-            <h2>Найдено:</h2>
-            <p>3</p>
-            <h3>Сортировка:</h3>
-            <ul>
-              <li>
-                <a class="button sorting-found-items" href="">По цене</a>
-              </li>
-              <li>
-                <a class="button sorting-found-items" href="">По типу</a>
-              </li>
-              <li>
-                <a class="button sorting-found-items" href="">По рейтингу</a>
-              </li>
-            </ul>
+            <div class="found-hotel-number-wrapper">
+              <h2>Найдено:</h2>
+              <p>3</p>
+            </div>
+            <div class="sorting-found-items-wrapper">
+              <h3>Сортировка:</h3>
+              <ul class="sorting-found-items-inner">
+                <li>
+                  <a class="button sorting-found-items" href="">По цене</a>
+                </li>
+                <li>
+                  <a class="button sorting-found-items" href="">По типу</a>
+                </li>
+                <li>
+                  <a class="button sorting-found-items" href="">По рейтингу</a>
+                </li>
+              </ul>
+            </div>
             <ul class="sorting-arrows">
               <li>
-                <a class="button sorting-arrows-up" href=""></a>
+                <a class="button sorting-arrows-up" href="">up</a>
               </li>
               <li>
-                <a class="button sorting-arrows-down" href=""></a>
+                <a class="button sorting-arrows-down" href="">down</a>
               </li>
             </ul>
           </div>
@@ -165,60 +168,74 @@
         <section>
           <h2>Список отелей</h2>
           <ul class="list-of-hotels">
-            <li>
-              <a class="name-of-the-hotel" href="">Amara resort & spa</a>
-              <p>Гостиница от 4000</p>
+            <li class="list-of-hotels-items">
               <img
                 src="image/hotel_with_red_trees.jpg"
                 width="135"
                 height="90"
                 alt="фото отеля с красными деревьями"
               />
-              <a class="button more-detailed" href="">Подробнее</a>
-              <a class="button to-book" href="">Забронировать</a>
-              <img
-                src="image/star.svg"
-                width="18"
-                height="17"
-                alt="4-х звёздочный"
-              />
-              <img src="image/star.svg" width="18" height="17" alt="" />
-              <img src="image/star.svg" width="18" height="17" alt="" />
-              <img src="image/star.svg" width="18" height="17" alt="" />
-              <p class="rating">Рейтинг:8,5</p>
+              <div class="name-of-the-hotel-inner">
+                <a class="name-of-the-hotel" href="">Amara resort & spa</a>
+                <p>Гостиница</p>
+                <p>от 4000</p>
+                <a class="button more-detailed" href="">Подробнее</a>
+                <a class="button to-book" href="">Забронировать</a>
+              </div>
+              <div class="rating-star">
+                <img
+                  src="image/star.svg"
+                  width="18"
+                  height="17"
+                  alt="4-х звёздочный"
+                />
+                <img src="image/star.svg" width="18" height="17" alt="" />
+                <img src="image/star.svg" width="18" height="17" alt="" />
+                <img src="image/star.svg" width="18" height="17" alt="" />
+                <p class="rating">Рейтинг:8,5</p>
+              </div>
             </li>
-            <li>
-              <a class="name-of-the-hotel" href="">Desert quail inn</a>
-              <p>Мотель от 3000</p>
+            <li class="list-of-hotels-items">
               <img
                 src="image/roadside_motel.jpg"
                 width="135"
                 height="90"
                 alt="фото мотеля у дороги"
               />
-              <a class="button more-detailed" href="">Подробнее</a>
-              <a class="button to-book" href="">Забронировать</a>
-              <img
-                src="image/star.svg"
-                width="18"
-                height="17"
-                alt="3-х звёздочный"
-              />
-              <img src="image/star.svg" width="18" height="17" alt="" />
-              <img src="image/star.svg" width="18" height="17" alt="" />
-              <p class="rating">Рейтинг:8,9</p>
+              <div class="name-of-the-hotel-inner">
+                <a class="name-of-the-hotel" href="">Desert quail inn</a>
+                <p>Мотель</p>
+                <p>от 3000</p>
+                <a class="button more-detailed" href="">Подробнее</a>
+                <a class="button to-book" href="">Забронировать</a>
+              </div>
+              <div class="rating-star">
+                <img
+                  src="image/star.svg"
+                  width="18"
+                  height="17"
+                  alt="3-х звёздочный"
+                />
+                <img src="image/star.svg" width="18" height="17" alt="" />
+                <img src="image/star.svg" width="18" height="17" alt="" />
+                <p class="rating">Рейтинг:8,9</p>
+              </div>
             </li>
-            <li>
-              <a class="name-of-the-hotel" href="">Villas at poco diablo</a>
-              <p>Апартаменты от 2000</p>
+            <li class="list-of-hotels-items">
               <img
                 src="image/house_in_greenery.jpg"
                 width="135"
                 height="90"
                 alt="фото дома в зелени"
               />
+              <div class="name-of-the-hotel-inner">
+              <a class="name-of-the-hotel" href="">Villas at poco diablo</a>
+              <p>Апартаменты</p>
+              <p>от 2000</p>
               <a class="button more-detailed" href="">Подробнее</a>
               <a class="button to-book" href="">Забронировать</a>
+            </div>
+            <div class="rating-star">
               <img
                 src="image/star.svg"
                 width="18"
@@ -227,6 +244,7 @@
               />
               <img src="image/star.svg" width="18" height="17" alt="" />
               <p class="rating">Рейтинг:9,2</p>
+            </div>
             </li>
           </ul>
         </section>
@@ -243,7 +261,7 @@
         </section>
         <section class="footer-social">
           <h2>Давайте дружить!</h2>
-          <ul>
+          <ul class="footer-social-wrapper">
             <li>
               <a class="social-button" href=""
                 ><svg
