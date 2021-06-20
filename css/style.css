@@ -477,49 +477,22 @@ img {
   margin-top: 60px;
 }
 
-.list-of-hotels-items img {
+.list-of-hotels-items-image {
   height: 90px;
   margin-top: 5px;
 }
 
-.name-of-the-hotel-inner {
+.name-of-the-hotel-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 258px;
+  width: 780px;
+  min-height: 150px;
   margin-left: 30px;
 }
 
-.name-of-the-hotel {
-  min-width: 240px;
+.name-of-the-hotel-inner {
+  width: 780px;
   min-height: 26px;
-}
-
-.name-of-the-hotel-inner p:first-of-type {
-  margin-top: 7px;
-  margin-bottom: 0;
-  min-width: 107px;
-  min-height: 21px;
-}
-.name-of-the-hotel-inner p:last-of-type {
-  margin-top: 7px;
-  margin-bottom: 0;
-  margin-left: 9px;
-  min-width: 96px;
-  min-height: 21px;
-}
-
-.rating-star {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  width: 110px;
-  margin-left: auto;
-  margin-right: 70px;
-}
-
-.rating-star p {
-  margin-top: 47px;
-  margin-bottom: 0;
 }
 
 .rating {
@@ -527,9 +500,12 @@ img {
   margin-top: 47px;
 }
 
-.rating-star img {
-  width: 18px;
+.image-star {
+  margin-top: 29px;
+  margin-bottom: 0;
   height: 17px;
+  text-align: right;
+
 }
 
 /* Main footer */
