@@ -42,16 +42,35 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Grid */
 
 .page {
   height: 100%;
 }
 
+.main-header {
+  position: relative;
+}
+
 /* Logo */
 
 .main-header-logo {
-  justify-self: center;
+  position: absolute;
+  top: 0;
+  left: 531px;
 }
 
 /* Main navigation */
@@ -61,6 +80,9 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
+  padding: 15px 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .main-navigation a {
@@ -78,11 +100,23 @@ img {
 }
 
 .site-navigation li {
-  width: 300px;
+  width: 50%;
 }
 
 .site-navigation a {
   text-decoration: none;
+}
+
+.navigation-right li {
+  text-align: right;
+}
+
+.info {
+  margin-left: 72px;
+}
+
+.hotel {
+  margin-right: 72px;
 }
 
 .site-navigation a:not([href]) {
@@ -110,6 +144,9 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-top: 42.5px;
+  margin-bottom: 0;
+  min-height: 80px;
 }
 
 /* Five reasons */
@@ -118,10 +155,8 @@ img {
   text-align: center;
   font-size: 14px;
   line-height: 26px;
-}
-
-.features {
-  margin-bottom: 58px;
+  margin-top: 16.5px;
+  margin-bottom: 0;
 }
 
 .feature-list {
@@ -131,6 +166,7 @@ img {
   margin: 0;
   padding: 0;
   text-align: center;
+  margin-top: 51px;
 }
 
 .feature-list .real-town {
@@ -157,6 +193,18 @@ img {
   background-color: var(--basic-blue);
 }
 
+.real-town-wrapper h3 {
+  margin-top: 47px;
+}
+
+.real-town-wrapper h3 + p {
+  margin-top: 25px;
+}
+
+.real-town-wrapper p + p {
+  margin-top: 23px;
+}
+
 .feature-list h3 {
   font-size: 21px;
   line-height: 21px;
@@ -175,6 +223,40 @@ img {
   width: 400px;
 }
 
+.feature-list-attractions-house img {
+  margin-top: 60px;
+}
+
+.feature-list-attractions-house h3 {
+  margin-top: 28px;
+}
+
+.feature-list-attractions-house p {
+  margin-top: 25px;
+}
+
+.feature-list-attractions-burger img {
+  margin-top: 61px;
+}
+
+.feature-list-attractions-burger h3 {
+  margin-top: 29px;
+}
+
+.feature-list-attractions-burger p {
+  margin-top: 25px;
+}
+
+.feature-list-attractions-box img {
+  margin-top: 55px;
+}
+.feature-list-attractions-box h3 {
+  margin-top: 28px;
+}
+.feature-list-attractions-box p {
+  margin-top: 25px;
+}
+
 .feature-item-devil-bridge {
   display: flex;
 }
@@ -191,23 +273,53 @@ img {
   background-color: var(--basic-blue);
 }
 
+.devil-bridge-wrapper h3 {
+  margin-top: 50px;
+}
+
+.devil-bridge-wrapper h3 + p {
+  margin-top: 25px;
+}
+
+.devil-bridge-wrapper p + p {
+  margin-top: 23px;
+}
+
 .feature-item {
   margin: 0;
 }
 
-.features-items-small-area {
+.small-area {
   width: 400px;
   min-height: 256px;
 }
 
-.features-items-beautiful-road {
+.beautiful-road {
   width: 400px;
   min-height: 256px;
 }
 
-.features-items-few-tourists {
+.few-tourists {
   width: 400px;
   min-height: 256px;
+}
+
+.small-area h3,
+.beautiful-road h3,
+.few-tourists h3 {
+  margin-top: 47px;
+}
+
+.small-area h3 + p,
+.beautiful-road h3 + p,
+.few-tourists h3 + p {
+  margin-top: 25px;
+}
+
+.small-area p + p,
+.beautiful-road p + p,
+.few-tourists p + p {
+  margin-top: 23px;
 }
 
 .small-area,
@@ -225,6 +337,15 @@ img {
   text-align: center;
   font-size: 30px;
   line-height: 24px;
+  margin-top: 58px;
+  margin-bottom: 0;
+}
+
+.interested p {
+  min-height: 62px;
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-top: 33px;
 }
 
 .list-of-hotels {
@@ -272,6 +393,7 @@ img {
   background-color: var(--basic-brown);
   height: 86px;
   width: 568px;
+  margin-top: 24px;
 }
 
 .hotel-search:hover {
@@ -505,7 +627,6 @@ img {
   margin-bottom: 0;
   height: 17px;
   text-align: right;
-
 }
 
 /* Main footer */
@@ -514,6 +635,12 @@ img {
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  min-height: 120px;
+}
+
+.main-footer-shift {
+  opacity: 0.8;
+  margin-top: -120px;
 }
 
 .footer-contacts a {
@@ -536,16 +663,18 @@ img {
 
 .footer-contacts {
   padding-top: 23px;
+  text-align: center;
 }
 
 /* Social button */
 
 .social-button {
   background-color: var(--basic-blue);
-  display: block;
+  display: flex;
   width: 46px;
   height: 48px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 6px;
 }
 
@@ -571,4 +700,5 @@ img {
 .footer-copyright {
   padding-top: 47px;
   line-height: 26px;
+  text-align: center;
 }

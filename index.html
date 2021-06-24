@@ -23,14 +23,16 @@
               alt="Логотип сайта городка Седона"
             />
           </a>
-          <ul class="site-navigation">
-            <li><a href="">Информация</a></li>
+          <ul class="site-navigation navigation-left">
+            <li><a href="" class="info">Информация</a></li>
             <li>
-              <a href="">Фото и видео</a>
+              <a href="" class="foto-video">Фото и видео</a>
             </li>
-            <li><a href="">Карта штата</a></li>
+          </ul>
+          <ul class="site-navigation navigation-right">
+            <li><a href="" class="map-state">Карта штата</a></li>
             <li>
-              <a href="catalog.html">Гостиницы</a>
+              <a href="catalog.html" class="hotel">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -75,7 +77,7 @@
                 </div>
               </div>
               <ul class="feature-list-attractions">
-                <li>
+                <li class="feature-list-attractions-house">
                   <img
                     src="image/house_icon.svg"
                     width="75"
@@ -88,7 +90,7 @@
                     мотеле, всё как в кино!
                   </p>
                 </li>
-                <li>
+                <li class="feature-list-attractions-burger">
                   <img
                     src="image/burger_icon.svg"
                     width="74"
@@ -101,7 +103,7 @@
                     вы не разочаруютесь!
                   </p>
                 </li>
-                <li>
+                <li class="feature-list-attractions-box">
                   <img
                     src="image/box_icon.svg"
                     width="64"
@@ -197,9 +199,9 @@
           />
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer main-footer-shift">
         <section class="footer-contacts">
-          <h2>Контакты</h2>
+          <h2 class="visually-hidden">Контакты</h2>
           <p>
             <a class="footer-address" href="">#VISITSEDONA</a>
           </p>
@@ -208,7 +210,7 @@
           </p>
         </section>
         <section class="footer-social">
-          <h2>Давайте дружить!</h2>
+          <h2 class="visually-hidden">Давайте дружить!</h2>
           <ul class="footer-social-wrapper">
             <li>
               <a class="social-button" href=""
@@ -261,7 +263,7 @@
           </ul>
         </section>
         <section class="footer-copyright">
-          <h2>Разработчик</h2>
+          <h2 class="visually-hidden">Разработчик</h2>
           <p>
             website by
             <a class="copyright-button" href="https://htmlacademy.ru"
