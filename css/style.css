@@ -81,8 +81,10 @@ img {
   font-weight: 700;
   color: var(--basic-black);
   padding: 15px 0;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
 }
 
 .main-navigation a {
@@ -100,23 +102,27 @@ img {
 }
 
 .site-navigation li {
-  width: 50%;
+  width: 240px;
 }
 
 .site-navigation a {
   text-decoration: none;
 }
 
-.navigation-right li {
-  text-align: right;
+.info {
+  margin-left: 63px;
 }
 
-.info {
-  margin-left: 72px;
+.foto-video {
+  margin-left: 60px;
+}
+
+.map-state {
+  margin-left: 97px;
 }
 
 .hotel {
-  margin-right: 72px;
+  margin-left: 89px;
 }
 
 .site-navigation a:not([href]) {
@@ -191,6 +197,7 @@ img {
   min-height: 256px;
   width: 400px;
   background-color: var(--basic-blue);
+  color: var(--basic-white);
 }
 
 .real-town-wrapper h3 {
@@ -271,6 +278,7 @@ img {
   min-height: 256px;
   width: 400px;
   background-color: var(--basic-blue);
+  color: var(--basic-white);
 }
 
 .devil-bridge-wrapper h3 {
@@ -341,7 +349,7 @@ img {
   margin-bottom: 0;
 }
 
-.interested p {
+.the-best-offers {
   min-height: 62px;
   margin-top: 4px;
   margin-bottom: 0;
@@ -402,6 +410,7 @@ img {
 
 .hotel-search:active {
   background-color: var(--basic-brown-black);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-show {
@@ -476,6 +485,25 @@ img {
 
 .name-of-the-hotel-inner .button {
   margin-top: 15.5px;
+}
+
+.find-a-hotel {
+  width: 458px;
+  margin-top: 54px;
+  height: 58px;
+  background-color: var(--basic-blue);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.find-a-hotel:hover {
+  background-color: var(--basic-blue-dark);
+}
+
+.find-a-hotel:focus {
+  background-color: var(--basic-blue-black);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* filters */
@@ -629,6 +657,158 @@ img {
   text-align: right;
 }
 
+/* Selecting-form */
+
+.selecting {
+  width: 568px;
+  height: 395px;
+  background: #ffffff;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.selecting-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 458px;
+  margin-left: 55px;
+  justify-content: space-between;
+}
+
+.selecting-form-item:nth-child(3),
+.selecting-form-item:nth-child(4) {
+  width: 229px;
+}
+
+.selecting-form-item input {
+  width: 322px;
+  height: 26px;
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--basic-grey-light);
+}
+
+.selecting-form-item:nth-child(3) input {
+  width: 36px;
+  padding: 6px 39px;
+  text-align: center;
+}
+
+.selecting-form-item:nth-child(4) input {
+  width: 114px;
+  width: 38px;
+  padding: 6px 38px;
+  text-align: center;
+}
+
+.selecting-form-item {
+  position: relative;
+}
+
+.selecting-form-check-in-date {
+  margin-top: 55px;
+  margin-left: 20px;
+}
+
+.selecting-form-departure-date {
+  margin-top: 29px;
+  margin-left: 16px;
+}
+
+.selecting-form-adults {
+  margin-top: 30px;
+  margin-left: 31px;
+}
+
+.form-children {
+  margin-left: 53px;
+}
+
+.selecting-form-children {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.button-modal {
+  display: block;
+  width: 38px;
+  height: 38px;
+ }
+
+ .button-modal svg:hover {
+  fill: var(--basic-black);
+}
+
+.button-modal svg:active {
+  fill: var(--basic-blue);
+}
+
+.button-check-in-calendar {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-departure-calendar {
+  position: absolute;
+  top: 29px;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-adults-minus {
+  position: absolute;
+  top: 30px;
+  left: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.button-adults-plus {
+  position: absolute;
+  top: 30px;
+  left: 186px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-children-minus {
+  position: absolute;
+  top: 30px;
+  right: 77px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-children-plus {
+  position: absolute;
+  top: 30px;
+  right: 1px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Main footer */
 
 .main-footer {
@@ -676,6 +856,18 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 6px;
+}
+
+.social-button:hover {
+  background-color: var(--basic-blue-dark);
+}
+
+.social-button:focus {
+  background-color: var(--basic-blue-black);
+}
+
+.social-button:focus .investment {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-social-wrapper {
