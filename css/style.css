@@ -726,6 +726,16 @@ img {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:focus + label::before {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.filter-input-checkbox:focus + label::after {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+
 .filters-wrapper-right fieldset {
   padding: 0;
   margin: 0;
