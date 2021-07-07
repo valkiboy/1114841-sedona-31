@@ -15,14 +15,14 @@
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img
-            src="image/logo.svg"
-            width="138"
-            height="70"
-            alt="Логотип сайта городка Седона"
-          />
-        </a>
+          <a class="main-header-logo" href="index.html">
+            <img
+              src="image/logo.svg"
+              width="138"
+              height="70"
+              alt="Логотип сайта городка Седона"
+            />
+          </a>
           <ul class="site-navigation">
             <li><a href="">Информация</a></li>
             <li>
@@ -85,7 +85,7 @@
                       id="hotel"
                       checked
                     />
-                    <label  for="hotel">Гостиница</label>
+                    <label for="hotel">Гостиница</label>
                   </li>
                   <li class="filter-option">
                     <input
@@ -117,11 +117,11 @@
                 </legend>
                 <div class="filter">
                   <div class="filter-interval">
-                    <label
-                      >От <input type="text" name="min-interval" value="0"
+                    <label aria-label="Стоимость в сутки от"
+                      >От <input type="number" name="min-interval" value="0"
                     /></label>
-                    <label
-                      >До <input type="text" name="max-interval" value="3000"
+                    <label aria-label="Стоимость в сутки до"
+                      >До <input type="number" name="max-interval" value="3000"
                     /></label>
                   </div>
                   <div class="filter-range-wrapper">
@@ -129,8 +129,16 @@
                       <div class="filter-range-scale">
                         <div class="filter-range-bar"></div>
                       </div>
-                      <button type="button" class="filter-range-handle min"></button>
-                      <button type="button" class="filter-range-handle max"></button>
+                      <button
+                        aria-label="минимальное значение"
+                        type="button"
+                        class="filter-range-handle min"
+                      ></button>
+                      <button
+                        aria-label="максимальное значение"
+                        type="button"
+                        class="filter-range-handle max"
+                      ></button>
                     </div>
                   </div>
                 </div>
@@ -149,26 +157,59 @@
               <h3>Сортировка:</h3>
               <ul class="sorting-found-items-inner">
                 <li>
-                  <a class="button sorting-found-items" >По цене</a>
+                  <a
+                    aria-label="сортировка по цене"
+                    class="button sorting-found-items"
+                    >По цене</a
+                  >
                 </li>
                 <li>
-                  <a class="button sorting-found-items" href="">По типу</a>
+                  <a
+                    aria-label="сортировка по типу"
+                    class="button sorting-found-items"
+                    href=""
+                    >По типу</a
+                  >
                 </li>
                 <li>
-                  <a class="button sorting-found-items" href="">По рейтингу</a>
+                  <a
+                    aria-label="сортировка по рейтингу"
+                    class="button sorting-found-items"
+                    href=""
+                    >По рейтингу</a
+                  >
                 </li>
               </ul>
             </div>
             <ul class="sorting-arrows">
               <li>
-                <a class="button sorting-arrows-up" href=""><svg width="11" height="10" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" />
-                  </svg></a>
+                <a
+                  aria-label="сортировка по возрастанию"
+                  class="button sorting-arrows-up"
+                  href=""
+                  ><svg
+                    width="11"
+                    height="10"
+                    viewBox="0 0 11 10"
+                    fill="#CACACA"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M5.5 0L0 10H11L5.5 0Z" /></svg
+                ></a>
               </li>
               <li>
-                <a class="button sorting-arrows-down" ><svg width="11" height="10" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" />
-                  </svg></a>
+                <a
+                  aria-label="сортировка по убыванию"
+                  class="button sorting-arrows-down"
+                  ><svg
+                    width="11"
+                    height="10"
+                    viewBox="0 0 11 10"
+                    fill="#CACACA"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M5.5 10L0 0H11" /></svg
+                ></a>
               </li>
             </ul>
           </div>
@@ -177,7 +218,8 @@
           <h2 class="visually-hidden">Список отелей</h2>
           <ul class="list-of-hotels">
             <li class="list-of-hotels-items">
-              <img class="list-of-hotels-items-image"
+              <img
+                class="list-of-hotels-items-image"
                 src="image/hotel_with_red_trees.jpg"
                 width="135"
                 height="90"
@@ -212,7 +254,8 @@
               </div>
             </li>
             <li class="list-of-hotels-items">
-              <img class="list-of-hotels-items-image"
+              <img
+                class="list-of-hotels-items-image"
                 src="image/roadside_motel.jpg"
                 width="135"
                 height="90"
@@ -246,7 +289,8 @@
               </div>
             </li>
             <li class="list-of-hotels-items">
-              <img class="list-of-hotels-items-image"
+              <img
+                class="list-of-hotels-items-image"
                 src="image/house_in_greenery.jpg"
                 width="135"
                 height="90"
@@ -288,15 +332,22 @@
             <a class="footer-address" href="">#VISITSEDONA</a>
           </p>
           <p>
-            <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a
+              aria-label="наш телефон +7 800 555-86-28"
+              class="footer-phone"
+              href="tel:+78005558628"
+              >+7 800 555-86-28</a
+            >
           </p>
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">Давайте дружить!</h2>
           <ul class="footer-social-wrapper">
             <li>
-              <a class="social-button" href=""
-                ><svg
+              <a class="social-button" href="">
+                <span class="visually-hidden">Твиттер</span>
+                <svg
+                  aria-hidden="true"
                   class="investment"
                   width="17"
                   height="17"
@@ -311,8 +362,10 @@
               </a>
             </li>
             <li>
-              <a class="social-button" href=""
-                ><svg
+              <a class="social-button" href="">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg
+                  aria-hidden="true"
                   class="investment"
                   width="12"
                   height="22"
@@ -326,8 +379,10 @@
               ></a>
             </li>
             <li>
-              <a class="social-button" href=""
-                ><svg
+              <a class="social-button" href="">
+                <span class="visually-hidden">Ютуб</span>
+                <svg
+                  aria-hidden="true"
                   class="investment"
                   width="20"
                   height="16"
@@ -350,6 +405,7 @@
             website by
             <a class="copyright-button" href="https://htmlacademy.ru"
               ><svg
+                aria-hidden="true"
                 class="copyright-academy"
                 width="115"
                 height="34"
