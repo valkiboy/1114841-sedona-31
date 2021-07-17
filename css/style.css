@@ -1150,6 +1150,32 @@ img {
   transform: translateY(-100px) translateX(-50%);
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%) translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-50%) translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-50%) translateX(10px);
+  }
+}
+
 .selecting-form {
   display: flex;
   flex-wrap: wrap;
@@ -1295,17 +1321,15 @@ img {
 }
 
 .footer-contacts a {
+  display: block;
   text-decoration: none;
   color: var(--basic-black);
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-}
-
-.footer-contacts p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .footer-address {
@@ -1314,10 +1338,6 @@ img {
 
 .footer-phone {
   margin-left: 73px;
-}
-
-.footer-contacts p+p {
-  margin-top: 9px;
 }
 
 .footer-address:hover {
